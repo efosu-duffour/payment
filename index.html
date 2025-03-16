@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preload" as="image" type="image/svg+xml" href="/hero.svg" />
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-Bold.ttf" crossorigin/>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-Medium.ttf" crossorigin/>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-SemiBold.ttf" crossorigin/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the landing page for Payment, the best online payment platform">
+    <title>Payment Landing Page</title>
+    <style>
+      @font-face {
+        font-family: Poppins;
+        font-weight: 500;
+        font-style: normal;
+        src: url("/fonts/Poppins-Medium.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      @font-face {
+        font-family: Poppins;
+        font-weight: 600;
+        font-style: normal;
+        src: url("/fonts/Poppins-SemiBold.ttf") format("truetype");
+        font-display: swap;
+      }
+      @font-face {
+        font-family: Poppins;
+        font-weight: 700;
+        font-style: normal;
+        src: url("/fonts/Poppins-Bold.ttf") format("truetype");
+        font-display: swap;
+      }
+
+      body {
+        font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <div class="header-content">
+          <nav class="top-nav">
+            <svg class="logo" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20 0C8.95433 0 0 8.9545 0 20C0 31.045 8.95433 40 20 40C31.0465 40 40 31.045 40 20C40 8.9545 31.0465 0 20 0ZM26.0157 7.9265V10.3712C20.7205 10.3712 16.4257 14.6655 16.4257 19.961H13.9813C13.9813 13.314 19.369 7.9265 26.0157 7.9265ZM23.5742 19.961H26.0188C26.0188 26.6092 20.6305 31.9987 13.9812 31.9987V29.5508C19.279 29.5508 23.5742 25.2582 23.5742 19.961Z"
+                fill="white" />
+            </svg>
+            <ul>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Help</li>
+              <li>Blog</li>
+              <li>About us</li>
+            </ul>
+            <div class="nav-buttons-container">
+              <button type="button">Log in</button>
+              <button type="button">Sign up</button>
+            </div>
+            <div class="menu-button">
+              <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.5" x2="35" y2="1.5" stroke="white" stroke-width="3" />
+                <line y1="10.5" x2="35" y2="10.5" stroke="white" stroke-width="3" />
+              </svg>
+            </div>
+          </nav>
+        </div>
+        <div class="mobile-header-container">
+          <div class="mobile-header-content">
+            <nav>
+              <ul>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Help</li>
+                <li>Blog</li>
+                <li>About us</li>
+                <li>Log In</li>
+                <li>Sign Up</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="heading-section">
+        <div class="heading-container">
+          <div class="heading-content">
+            <span>Start saving money</span>
+            <h1>Smart credit card for your daily life</h1>
+            <button type="button">
+              <span>Download</span>
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.6001 13L13.0001 17.4L17.4001 13" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M13 8.59961V17.3996" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M13 24C19.0751 24 24 19.0751 24 13C24 6.92487 19.0751 2 13 2C6.92487 2 2 6.92487 2 13C2 19.0751 6.92487 24 13 24Z"
+                  stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <div class="mockup-container">
+        <img src="/hero.svg" alt="hero image">
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
