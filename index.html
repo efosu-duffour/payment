@@ -7,6 +7,7 @@
     <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-Bold.ttf" crossorigin/>
     <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-Medium.ttf" crossorigin/>
     <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-SemiBold.ttf" crossorigin/>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/Poppins-Regular.ttf" crossorigin media="(max-width: 800px)"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is the landing page for Payment, the best online payment platform">
     <title>Payment Landing Page</title>
@@ -34,12 +35,20 @@
         font-display: swap;
       }
 
+      @font-face {
+        font-family: Poppins;
+        font-weight: 400;
+        font-style: normal;
+        src: url("/fonts/Poppins-Regular.ttf") format("truetype");
+        font-display: swap;
+      }
+
       body {
         font-family: Poppins, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
     </style>
   </head>
-  <body>
+  <body class="menu-inactive">
     <header>
       <div class="header-container">
         <div class="header-content">
@@ -60,53 +69,53 @@
               <button type="button">Log in</button>
               <button type="button">Sign up</button>
             </div>
-            <div class="menu-button">
-              <svg width="35" height="12" viewBox="0 0 35 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="1.5" x2="35" y2="1.5" stroke="white" stroke-width="3" />
-                <line y1="10.5" x2="35" y2="10.5" stroke="white" stroke-width="3" />
-              </svg>
+            <div class="menu-button" style="height: 40px;  width: 40px;">
+              <div style="height: 5px; width: 40px;" class="bar"></div>
+              <div style="height: 5px; width: 40px;" class="bar"></div>
             </div>
           </nav>
         </div>
-        <div class="mobile-header-container">
-          <div class="mobile-header-content">
-            <nav>
-              <ul>
-                <li>Features</li>
-                <li>Pricing</li>
-                <li>Help</li>
-                <li>Blog</li>
-                <li>About us</li>
-                <li>Log In</li>
-                <li>Sign Up</li>
-              </ul>
-            </nav>
-          </div>
+      </div>
+      <div class="mobile-header-container">
+        <div class="mobile-header-content">
+          <nav>
+            <ul>
+              <li>Features</li>
+              <li>Pricing</li>
+              <li>Help</li>
+              <li>Blog</li>
+              <li>About us</li>
+              <li>Log In</li>
+              <li>Sign Up</li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="heading-section">
-        <div class="heading-container">
-          <div class="heading-content">
-            <span>Start saving money</span>
-            <h1>Smart credit card for your daily life</h1>
-            <button type="button">
-              <span>Download</span>
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.6001 13L13.0001 17.4L17.4001 13" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M13 8.59961V17.3996" stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M13 24C19.0751 24 24 19.0751 24 13C24 6.92487 19.0751 2 13 2C6.92487 2 2 6.92487 2 13C2 19.0751 6.92487 24 13 24Z"
-                  stroke="#1E1E1E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
+      <div class="main-content">
+        <section class="heading-section">
+          <div class="heading-container">
+            <div class="heading-content">
+              <span class="heading-span">Start saving money</span>
+              <h1>Smart credit card for your daily life</h1>
+              <button class="download-button" type="button">
+                <span>Download</span>
+                <svg width="26" height="26" fill="None" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.6001 13L13.0001 17.4L17.4001 13" stroke-width="3" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M13 8.59961V17.3996" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                  <path
+                    d="M13 24C19.0751 24 24 19.0751 24 13C24 6.92487 19.0751 2 13 2C6.92487 2 2 6.92487 2 13C2 19.0751 6.92487 24 13 24Z"
+                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
           </div>
+        </section>
+        <div class="mockup-container">
+          <img src="/hero.svg" alt="hero image">
         </div>
-      </section>
-      <div class="mockup-container">
-        <img src="/hero.svg" alt="hero image">
       </div>
     </main>
     <script type="module" src="/src/main.ts"></script>
