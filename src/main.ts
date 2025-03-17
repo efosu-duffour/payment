@@ -75,7 +75,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("load", () => {
   const splitTexts = new SplitType("h1", {
-    types: "lines,words,chars"
+    types: "lines,words,chars",
+
   })
 
   setTimeout(() => {
@@ -97,7 +98,10 @@ window.addEventListener("load", () => {
       stagger: {
         each: 0.06
       },
-      duration: 0.4
+      duration: 0.4,
+      onComplete: () => {
+        splitTexts.revert();
+      }
     }, "start")
     .from(".header-container", {
       translateY: -100
